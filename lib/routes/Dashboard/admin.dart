@@ -58,8 +58,10 @@ class _adminState extends State<admin> {
                     width: 230,
                     height: 200,
                     alignment: Alignment.center,
-                    child: Image.asset(
-                      "assets/ph.jpg",
+                    child: Container(
+                      child: Image.asset(
+                        "assets/ph.jpg",
+                      ),
                     ),
                   ),
                   SizedBox(
@@ -148,6 +150,9 @@ class _adminState extends State<admin> {
                   SizedBox(
                     height: 15,
                   ),
+                  const SizedBox(
+                    height: 15,
+                  ),
                   Container(
                     width: double.infinity,
                     decoration: new BoxDecoration(
@@ -178,7 +183,7 @@ class _adminState extends State<admin> {
                           padding: const EdgeInsets.symmetric(
                               vertical: 10.0, horizontal: 42.0),
                           child: Text(
-                            " Connexion",
+                            "SIGN IN",
                             style: TextStyle(
                                 color: Colors.white,
                                 fontSize: 25.0,
@@ -189,6 +194,9 @@ class _adminState extends State<admin> {
                           login();
                           // Navigator.pushNamed(context, 'Home');
                         }),
+                  ),
+                  const SizedBox(
+                    height: 2,
                   ),
                 ],
               ),
@@ -248,10 +256,10 @@ class _adminState extends State<admin> {
       ScaffoldMessenger.of(context).showSnackBar(SnackBar(
           content: Text("Email et password ne peuvent pas être vide")));
     } else {
-      String url = "http://127.0.0.1:5000/crud/api/login";
+      String url = "http://localhost:3000/login";
 
       var data = {
-        "Email": Email.text,
+        "email": Email.text,
         "password": password.text,
       };
 
@@ -263,7 +271,7 @@ class _adminState extends State<admin> {
         if (response.statusCode == 200) {
           ScaffoldMessenger.of(context)
               .showSnackBar(SnackBar(content: Text("Login successful")));
-          Navigator.pushNamed(context, 'Home');
+          Navigator.pushNamed(context, 'drawer');
         } else {
           ScaffoldMessenger.of(context).showSnackBar(
               SnackBar(content: Text(" Email et password  invalid")));

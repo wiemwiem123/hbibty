@@ -325,49 +325,6 @@ class Epices extends StatelessWidget {
                                 mainAxisAlignment:
                                     MainAxisAlignment.spaceBetween,
                                 children: [
-                                  const Text("fghgfd"),
-                                  const Text("fghgfd"),
-                                  Center(
-                                    child: Container(
-                                      height: 100,
-                                      width: 100,
-                                      decoration: const BoxDecoration(
-                                          borderRadius: BorderRadius.all(
-                                            Radius.circular(11),
-                                          ),
-                                          image: DecorationImage(
-                                              image: AssetImage(
-                                                  'assets/zanjbil.jpg'),
-                                              fit: BoxFit.cover)),
-                                    ),
-                                  )
-                                ],
-                              )
-                            ]),
-                          ),
-                        ),
-                      )
-                    ],
-                  ),
-                ),
-                Card(
-                  child: Column(
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.all(15.0),
-                        child: SizedBox(
-                          width: 500,
-                          height: 100,
-                          child: InkWell(
-                            onTap: () {
-                              Navigator.pushNamed(context, 'Produit');
-                            },
-                            child: Column(children: [
-                              Row(
-                                crossAxisAlignment: CrossAxisAlignment.center,
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
-                                children: [
                                   const Text("Paprika(100gr)"),
                                   const Text("4.200 DT"),
                                   Center(
@@ -768,48 +725,6 @@ class Epices extends StatelessWidget {
                                           image: DecorationImage(
                                               image:
                                                   AssetImage('assets/poi.jpg'),
-                                              fit: BoxFit.cover)),
-                                    ),
-                                  )
-                                ],
-                              )
-                            ]),
-                          ),
-                        ),
-                      )
-                    ],
-                  ),
-                ),
-                Card(
-                  child: Column(
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.all(15.0),
-                        child: SizedBox(
-                          width: 500,
-                          height: 100,
-                          child: InkWell(
-                            onTap: () {
-                              Navigator.pushNamed(context, 'Produit');
-                            },
-                            child: Column(children: [
-                              Row(
-                                crossAxisAlignment: CrossAxisAlignment.center,
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
-                                children: [
-                                  const Text("fghgfd"),
-                                  Center(
-                                    child: Container(
-                                      height: 100,
-                                      width: 100,
-                                      decoration: const BoxDecoration(
-                                          borderRadius: BorderRadius.all(
-                                            Radius.circular(11),
-                                          ),
-                                          image: DecorationImage(
-                                              image: AssetImage(
-                                                  'assets/poivreg.jpg'),
                                               fit: BoxFit.cover)),
                                     ),
                                   )

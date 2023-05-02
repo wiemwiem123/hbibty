@@ -418,14 +418,16 @@ class MyCustomFormState extends State<MyCustomForm> {
       ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text("les champs ne peuvent pas être vide")));
     } else {
-      String url = "http://127.0.0.1:5000/crud/api/add";
+      String url = "http://localhost:3000/register";
       print("object");
 
       var data = {
-        "firstName": FirstName.text,
-        "lastName": LastName.text,
-        "Email": Email.text,
+        "nom": FirstName.text,
+        "prénom": LastName.text,
+        "email": Email.text,
         "password": password.text,
+        "role": "client",
+        "adresse": "null"
       };
       var bodyy = json.encode(data);
       print(bodyy);

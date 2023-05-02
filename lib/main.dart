@@ -1,5 +1,12 @@
-import 'package:Hbibty_bio/routes/admin.dart';
+import 'package:Hbibty_bio/routes/Dashboard/admin.dart';
+import 'package:Hbibty_bio/routes/Dashboard/compagne/compagne.dart';
+import 'package:Hbibty_bio/routes/Dashboard/drawer.dart';
+import 'package:Hbibty_bio/routes/Dashboard/product/deleteproduct.dart';
+import 'package:Hbibty_bio/routes/Dashboard/product/product.dart';
+import 'package:Hbibty_bio/routes/Dashboard/users/users.dart';
 import 'package:Hbibty_bio/routes/navigationbar/Meilleures%20ventes.dart';
+import 'package:Hbibty_bio/routes/navigationbar/home.dart';
+import 'package:Hbibty_bio/routes/navigationbar/profil.dart';
 import 'package:Hbibty_bio/routes/produit/laurier.dart';
 import 'package:Hbibty_bio/routes/produit/laurier1.dart';
 import 'package:Hbibty_bio/routes/produit/melounge.dart';
@@ -28,32 +35,37 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: chatbot(),
-      // debugShowCheckedModeBanner: false,
-      // initialRoute: '/',
-      // routes: {
-      //   '/': (context) => const Page1(),
-      //   'page2': (context) => signIn(),
-      //   'page3': (context) => const signUp(),
-      //   'page4': (context) => const Page4(),
-      //   'Home': (context) => const bienvenupage(
-      //         title: '',
-      //       ),
-      //   'Produit': (context) => const produit(),
-      //   'Epices': (context) => const Epices(),
-      //   'Oula': (context) => const Oula(),
-      //   'Infusions': (context) => const Infusions(),
-      //   'Snacks': (context) => const Snacks(),
-      //   'Artisanat': (context) => const Artisanat(),
-      //   'chatbot': (context) => const chatbot(),
-      //   'melounge': (context) => melounge(),
-      //   'Meilleuresventes': (context) => Meilleuresventes(),
-      //   'melounge1': (context) => melounge1(),
-      //   'laurier': (context) => laurier(),
-      //   'laurier1': (context) => laurier1(),
-      //   'scanner': (context) => const scanner(),
-      //   'admin': (context) => admin(),
-      // },
+      debugShowCheckedModeBanner: false,
+      initialRoute: '/',
+      routes: {
+        '/': (context) => const Page1(),
+        'page2': (context) => signIn(),
+        'page3': (context) => const signUp(),
+        'page4': (context) => const Page4(),
+        'Home': (context) => const bienvenupage(
+              title: '',
+            ),
+        'Produit': (context) => const produit(),
+        'Epices': (context) => const Epices(),
+        'Oula': (context) => const Oula(),
+        'Infusions': (context) => const Infusions(),
+        'Snacks': (context) => const Snacks(),
+        'Artisanat': (context) => const Artisanat(),
+        'chatbot': (context) => const chatbot(),
+        'melounge': (context) => melounge(),
+        'Meilleuresventes': (context) => Meilleuresventes(),
+        'melounge1': (context) => melounge1(),
+        'laurier': (context) => laurier(),
+        'laurier1': (context) => laurier1(),
+        'scanner': (context) => const scanner(),
+        'admin': (context) => admin(),
+        'chatbot': (context) => chatbot(),
+        'drawer': (context) => drawer(),
+        'users': (context) => users(),
+        'product': (context) => product(),
+        'compagne': (context) => compagne(),
+        'delete': (context) => deleteproduct(),
+      },
     );
   }
 }

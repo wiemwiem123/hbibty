@@ -312,10 +312,10 @@ class _signInState extends State<signIn> {
       ScaffoldMessenger.of(context).showSnackBar(SnackBar(
           content: Text("Email et password ne peuvent pas être vide")));
     } else {
-      String url = "http://127.0.0.1:5000/crud/api/login";
+      String url = "http://localhost:3000/login";
 
       var data = {
-        "Email": Email.text,
+        "email": Email.text,
         "password": password.text,
       };
 
